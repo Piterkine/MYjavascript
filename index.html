@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cricket Game</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      button {
+        font-size: 25px;
+        background-color: aquamarine;
+        border-radius: 10px;
+        padding: 5px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>🏏Bat Ball Stump Game</h1>
+    <button
+      onclick="
+      //this is ud=se to genrate random number
+    let randomNumber=Math.random()*3;
+    let computerchoice;
+    if(randomNumber>0 && randomNumber<=1 ){
+           computerchoice='Bat'
+          
+    }else if(randomNumber>1 && randomNumber<=2){
+          computerchoice='Ball'
+          
+    }else{
+          computerchoice='Stump'
+       
+    }
+
+        let resultmsg;
+     if(computerchoice==='Ball'){
+          resultmsg='User Win';
+     }else if(computerchoice==='Bat'){
+          resultmsg='Match Tie';
+     }else if(computerchoice==='Stump'){
+       resultmsg='Computer win';
+     }
+       alert(`You chose Bat |  Computer choice is ${computerchoice}  |  ${resultmsg}`)
+    "
+    >
+      BAT
+    </button>
+    <button
+      onclick="//this is ud=se to genrate random number
+     randomNumber=Math.random()*3;
+    let computerchoices;
+    if(randomNumber>0 && randomNumber<=1 ){
+           computerchoices='Bat'
+          
+    }else if(randomNumber>1 && randomNumber<=2){
+          computerchoices='Ball'
+          
+    }else{
+          computerchoices='Stump'
+       
+    }
+
+      let  resultmsgs;
+     if(computerchoices==='Ball'){
+          resultmsgs='Match Tie';
+     }else if(computerchoices==='Bat'){
+          resultmsgs='Computer Win';
+     }else if(computerchoices==='Stump'){
+       resultmsgs='User Win';
+     }
+       alert(`You chose Ball |  Computer choice is ${computerchoices}  |  ${resultmsgs}`)
+    "
+    >
+      BALL
+    </button>
+    <button
+      onclick="
+    //this is ud=se to genrate random number
+     randomNumber=Math.random()*3;
+     let computer_choice;
+    if(randomNumber>0 && randomNumber<=1 ){
+           computer_choice='Bat'
+          
+    }else if(randomNumber>1 && randomNumber<=2){
+          computer_choice='Ball'
+          
+    }else{
+          computer_choice='Stump'
+       
+    }
+
+      let   result_msg;
+     if(computer_choice==='Ball'){
+          result_msg='Computer Win';
+     }else if(computer_choice==='Bat'){
+          result_msg='User Win';
+     }else if(computer_choice==='Stump'){
+       result_msg='Match Tie';
+     }
+       alert(`You chose Stump |  Computer choice is ${computer_choice}  |  ${result_msg}`)
+    "
+    >
+      STUMP
+    </button>
+
+    <script></script>
+  </body>
+</html>
